@@ -20,6 +20,8 @@ cp /tmp/1.txt /etc/ssh/sshd_config
 echo "setting keepalive stuff"
 echo "ClientAliveInterval 30" >> /etc/ssh/sshd_config
 echo "ClientAliveCountMax 5" >> /etc/ssh/sshd_config
-echo "ServerAliveInterval 60" >> /etc/ssh/sshd_config
 echo "restarting sshd"
-#service sshd restart
+service sshd restart
+
+useradd user1
+passwd user1
